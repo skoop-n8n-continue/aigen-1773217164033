@@ -1,69 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="manifest" href="./manifest.json">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
-    <title>Digital Signage Dashboard</title>
-    <link rel="stylesheet" href="styles.css?v=z8f2k9">
+    <title>Digital Signage</title>
+    <link rel="stylesheet" href="styles.css?v=p4t9m1">
 </head>
 <body>
-    <div class="dashboard">
-        <header class="header">
-            <div class="logo">Digital Signage</div>
-            <div class="clock" id="clock">00:00:00</div>
-            <div class="date" id="date">Monday, Jan 1</div>
-        </header>
-
-        <main class="content-area">
-            <div class="main-promo">
-                <h2>Welcome to Our Center</h2>
-                <p>Discover the latest news and updates here.</p>
-                <div class="promo-box">
-                    <div class="pulse-circle"></div>
-                    <div class="promo-text">Special Event Today!</div>
-                </div>
-            </div>
-
-            <aside class="sidebar">
-                <div class="widget weather-widget">
-                    <h3>Weather</h3>
-                    <div class="temp">72°F</div>
-                    <div class="condition">Sunny</div>
-                </div>
-
-                <div class="widget news-widget">
-                    <h3>Latest News</h3>
-                    <ul id="news-list">
-                        <li>Breaking: Major event happening today</li>
-                        <li>Update: Local traffic conditions</li>
-                        <li>Reminder: Upcoming holiday schedule</li>
-                    </ul>
-                </div>
-            </aside>
-        </main>
-
-        <footer class="ticker">
-            <div class="ticker-content">
-                <span>Breaking News 1: Welcome to our modern digital signage display...</span>
-                <span>Breaking News 2: Keep an eye out for important announcements...</span>
-                <span>Breaking News 3: Enjoy your day!</span>
-            </div>
-        </footer>
+    <div class="container">
+        <h1 class="hello-text">Digital Signage</h1>
     </div>
-
-    <script src="script.js?v=z8f2k9"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('./sw.js')
-          .then(function (reg) { console.log('[PWA] SW registered:', reg.scope); })
-          .catch(function (err) { console.warn('[PWA] SW registration failed:', err); });
-      });
-    }
-  </script>
+    <script src="script.js?v=p4t9m1"></script>
 </body>
 </html>
