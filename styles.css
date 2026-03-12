@@ -25,7 +25,19 @@ body {
 }
 
 .hello-text {
-    font-size: 120px;
+    font-size: 150px;
     color: #00b7af;
     text-align: center;
+    animation: fadeInPulse 4s infinite alternate ease-in-out;
+}
+
+@keyframes fadeInPulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
 }
